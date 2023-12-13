@@ -1,5 +1,5 @@
 <?php
-include("../layout/header.php");
+include("./layout/header.php");
 ?>
                     <h3>Left Sidebar with Submenus</h3>
                     <p class="lead">
@@ -11,5 +11,5 @@ include("../layout/header.php");
                         </li>
                     </ul>
 <?php
-include("../layout/footer.php");
+include("./layout/footer.php");
 ?>

@@ -1,0 +1,133 @@
+DỮ liệu users
+insert into users (name, email, password) values ('Teresita Wethered', 'twethered0@google.com.br', '$2a$04$Son85ze.NETXKgavCwiI6.Ar6bT8U55OJHhavh3yMEWGSPlPWqYIe');
+insert into users (name, email, password) values ('Red Menloe', 'rmenloe1@behance.net', '$2a$04$UPbM0wGI/Bg/dF.4NfgNlOYZ0cUR5dz/dpBjzFAZdjcKRkSzfBA/S');
+insert into users (name, email, password) values ('Faulkner Usmar', 'fusmar2@cmu.edu', '$2a$04$KlwW/MKvFyOPMoPL2f6SJe1T1lr0iw4a2OgWhYZ2MJhjtlzzO4AbC');
+insert into users (name, email, password) values ('Any Bartolini', 'abartolini3@dion.ne.jp', '$2a$04$8sPYxFDQWOaIw4utcXcNVuhnmaV9ROM15trGNH5nt6rDNnhfwpVey');
+insert into users (name, email, password) values ('Gregory Bulbeck', 'gbulbeck4@histats.com', '$2a$04$ZghFFaHePfnfuMNPQttT4uDaOsGkq7gjAtq2DC.C4jiHQb/gVdTKa');
+insert into users (name, email, password) values ('Fairfax Henke', 'fhenke5@eventbrite.com', '$2a$04$fZLM9x/EkoP/oQAvCUtWVuS/4oU3Re.t7gaMttU2mSuQcsrLrP/c2');
+insert into users (name, email, password) values ('Marne Tisun', 'mtisun6@nsw.gov.au', '$2a$04$NAXtimjWspmAiBQXnKP2KuixsRchtDzWkvaf50mJlmePs5ShKUYKa');
+insert into users (name, email, password) values ('Bard Pearmain', 'bpearmain7@forbes.com', '$2a$04$81SwVQRo.ePdCnaisSK.vezuG.xnRY/rJ7lCza16tb/8FUvK08VYu');
+insert into users (name, email, password) values ('Jamima Pallin', 'jpallin8@ehow.com', '$2a$04$DwOZbYO3IaY1JgwIO6Nbfu/CRyvISXWkGwqKVIOMd86vaus30yO0C');
+insert into users (name, email, password) values ('Tootsie Woliter', 'twoliter9@ucsd.edu', '$2a$04$DrJSzmNuz4RrADqHhZKEzeinPn/FjqHwFAb2yqD0gIBenDoGlfLHu');
+insert into users (name, email, password) values ('TungAnh', 'ta@gmail.com', '$2y$10$G0pJQ9lHAFvrdY0z7iGbTuTBIQ/p.8er4F8iDarAHY/ba7FZBtQ6C');
+
+dữ liệu courses
+insert into courses(title, description) values ('Công Nghệ Web', 'Học Học Học');
+insert into courses(title, description) values ('Hệ Quản Trị CSDL', 'Học Học Học');
+insert into courses(title, description) values ('Mạng Máy Tính', 'Học Học Học');
+insert into courses(title, description) values ('Học Máy', 'Học Học Học');
+insert into courses(title, description) values ('Xác Suất Thống Kê', 'Học Học Học');
+insert into courses(title, description) values ('Triết Học Mac-LeNin', 'Học Học Học');
+
+dữ liệu vào course_user
+insert into course_user(course_id, user_id) values (1,11);
+insert into course_user(course_id, user_id) values (2,11);
+insert into course_user(course_id, user_id) values (3,11);
+insert into course_user(course_id, user_id) values (4,11);
+insert into course_user(course_id, user_id) values (5,11);
+insert into course_user(course_id, user_id) values (6,11);
+
+dữ liệu lessons
+insert into lessons (course_id, title, description) values('1','php','học học học');
+insert into lessons (course_id, title, description) values('1','js','học học học');
+insert into lessons (course_id, title, description) values('2','sql','học học học');
+insert into lessons (course_id, title, description) values('2','mysql','học học học');
+insert into lessons (course_id, title, description) values('3','Internet','học học học');
+insert into lessons (course_id, title, description) values('3','Router','học học học');
+insert into lessons (course_id, title, description) values('4','Thuật toán K-NN','học học học');
+insert into lessons (course_id, title, description) values('4','Thuật toán Bayes','học học học');
+insert into lessons (course_id, title, description) values('5','Xác Suất 1 biến','học học học');
+insert into lessons (course_id, title, description) values('5','Xác Suất Nhiều biến','học học học');
+insert into lessons (course_id, title, description) values('6','Giới thiệu Triết','học học học');
+insert into lessons (course_id, title, description) values('6','Giới thiệu về tư bản trong Triết','học học học');
+
+dữ liệu lessons
+insert into materials (lesson_id, title, file_path) values(1,'Tài Liệu PHP', '#');
+insert into materials (lesson_id, title, file_path) values(2,'Tài Liệu JS', '#');
+insert into materials (lesson_id, title, file_path) values(3,'Tài Liệu SQL', '#');
+insert into materials (lesson_id, title, file_path) values(4,'Tài Liệu MySQL', '#');
+insert into materials (lesson_id, title, file_path) values(5,'Tài Liệu Internet', '#');
+insert into materials (lesson_id, title, file_path) values(6,'Tài Liệu Router', '#');
+insert into materials (lesson_id, title, file_path) values(7,'Tài Liệu K-NN', '#');
+insert into materials (lesson_id, title, file_path) values(8,'Tài Liệu Bayes', '#');
+insert into materials (lesson_id, title, file_path) values(9,'Tài Liệu Xác Suất Một Biến', '#');
+insert into materials (lesson_id, title, file_path) values(10,'Tài Liệu Xác Suất Nhiều Biến', '#');
+insert into materials (lesson_id, title, file_path) values(11,'Tài Liệu Triết', '#');
+insert into materials (lesson_id, title, file_path) values(12,'Tài Liệu Tư Bản Trong Triết', '#');
+
+dữ liệu quizzes
+insert into quizzes (lesson_id, title) values (1, 'Quizz 1');
+insert into quizzes (lesson_id, title) values (1, 'Quizz 2');
+insert into quizzes (lesson_id, title) values (2, 'Quizz 1');
+insert into quizzes (lesson_id, title) values (2, 'Quizz 2');
+insert into quizzes (lesson_id, title) values (3, 'Quizz 1');
+insert into quizzes (lesson_id, title) values (3, 'Quizz 2');
+insert into quizzes (lesson_id, title) values (4, 'Quizz 1');
+insert into quizzes (lesson_id, title) values (4, 'Quizz 2');
+insert into quizzes (lesson_id, title) values (5, 'Quizz 1');
+insert into quizzes (lesson_id, title) values (5, 'Quizz 2');
+insert into quizzes (lesson_id, title) values (6, 'Quizz 1');
+insert into quizzes (lesson_id, title) values (6, 'Quizz 2');
+insert into quizzes (lesson_id, title) values (7, 'Quizz 1');
+insert into quizzes (lesson_id, title) values (7, 'Quizz 2');
+insert into quizzes (lesson_id, title) values (8, 'Quizz 1');
+insert into quizzes (lesson_id, title) values (8, 'Quizz 2');
+insert into quizzes (lesson_id, title) values (9, 'Quizz 1');
+insert into quizzes (lesson_id, title) values (9, 'Quizz 2');
+insert into quizzes (lesson_id, title) values (10, 'Quizz 1');
+insert into quizzes (lesson_id, title) values (10, 'Quizz 2');
+insert into quizzes (lesson_id, title) values (11, 'Quizz 1');
+insert into quizzes (lesson_id, title) values (11, 'Quizz 2');
+insert into quizzes (lesson_id, title) values (12, 'Quizz 1');
+insert into quizzes (lesson_id, title) values (12, 'Quizz 2');
+
+
+dữ liệu questions
+insert into questions (quiz_id, question) values(1,'question 1');
+insert into questions (quiz_id, question) values(1,'question 2');
+insert into questions (quiz_id, question) values(2,'question 1');
+insert into questions (quiz_id, question) values(2,'question 2');
+insert into questions (quiz_id, question) values(3,'question 1');
+insert into questions (quiz_id, question) values(3,'question 2');
+insert into questions (quiz_id, question) values(4,'question 1');
+insert into questions (quiz_id, question) values(4,'question 2');
+insert into questions (quiz_id, question) values(5,'question 1');
+insert into questions (quiz_id, question) values(5,'question 2');
+insert into questions (quiz_id, question) values(6,'question 1');
+insert into questions (quiz_id, question) values(6,'question 2');
+insert into questions (quiz_id, question) values(7,'question 1');
+insert into questions (quiz_id, question) values(7,'question 2');
+insert into questions (quiz_id, question) values(8,'question 1');
+insert into questions (quiz_id, question) values(8,'question 2');
+insert into questions (quiz_id, question) values(9,'question 1');
+insert into questions (quiz_id, question) values(9,'question 2');
+insert into questions (quiz_id, question) values(10,'question 1');
+insert into questions (quiz_id, question) values(10,'question 2');
+insert into questions (quiz_id, question) values(11,'question 1');
+insert into questions (quiz_id, question) values(11,'question 2');
+insert into questions (quiz_id, question) values(12,'question 1');
+insert into questions (quiz_id, question) values(12,'question 2');
+insert into questions (quiz_id, question) values(13,'question 1');
+insert into questions (quiz_id, question) values(13,'question 2');
+insert into questions (quiz_id, question) values(14,'question 1');
+insert into questions (quiz_id, question) values(14,'question 2');
+insert into questions (quiz_id, question) values(15,'question 1');
+insert into questions (quiz_id, question) values(15,'question 2');
+insert into questions (quiz_id, question) values(16,'question 1');
+insert into questions (quiz_id, question) values(16,'question 2');
+insert into questions (quiz_id, question) values(17,'question 1');
+insert into questions (quiz_id, question) values(17,'question 2');
+insert into questions (quiz_id, question) values(18,'question 1');
+insert into questions (quiz_id, question) values(18,'question 2');
+insert into questions (quiz_id, question) values(19,'question 1');
+insert into questions (quiz_id, question) values(19,'question 2');
+insert into questions (quiz_id, question) values(20,'question 1');
+insert into questions (quiz_id, question) values(20,'question 2');
+insert into questions (quiz_id, question) values(21,'question 1');
+insert into questions (quiz_id, question) values(21,'question 2');
+insert into questions (quiz_id, question) values(22,'question 1');
+insert into questions (quiz_id, question) values(22,'question 2');
+insert into questions (quiz_id, question) values(23,'question 1');
+insert into questions (quiz_id, question) values(23,'question 2');
+insert into questions (quiz_id, question) values(24,'question 1');
+insert into questions (quiz_id, question) values(24,'question 2');

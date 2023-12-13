@@ -16,7 +16,12 @@ include("../../layout/header.php");
                                     <div class="card-body">
                                         <div class="row justify-content-md-center">
                                             <div class="col-md-5">
-                                                <form class="mt-3" action="" method="post" id="login">
+                                                <?php
+                                                    if(isset($_GET['error'])){
+                                                        echo "<p style='color:red'>{$_GET['error']}</p>";
+                                                    }
+                                                ?>
+                                                <form class="mt-3" action="processLogin.php" method="post" id="login">
                                                     <div class="form-group">
                                                         <label for="username" class="sr-only">
                                                             Username
@@ -37,8 +42,7 @@ include("../../layout/header.php");
                         </div>
                     </div>
                 </div>
-        </div>
-
+            </div>
         </section>
     </div>
 </div>

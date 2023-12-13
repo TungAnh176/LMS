@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -60,6 +63,7 @@
         }
 
         #sidebar {
+            margin-left: -250px;
             min-width: 250px;
             max-width: 250px;
             background: #88B77B;
@@ -68,7 +72,7 @@
         }
 
         #sidebar.active {
-            margin-left: -250px;
+            margin-left: 0;
         }
 
         #sidebar .sidebar-header {
@@ -151,6 +155,10 @@
             transition: all 0.3s;
         }
 
+        .login{
+            list-style: none;
+        }
+
         @media (max-width: 768px) {
             #sidebar {
                 margin-left: -250px;
@@ -183,12 +191,6 @@
                     <li>
                         <a href="#">Source</a>
                     </li>
-                    <!-- <li>
-                        <a href="#">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li> -->
                 </ul>
             </nav>
             <!-- Page Content  -->
@@ -206,11 +208,15 @@
                                 <i class="bi bi-envelope ms-3 me-2"></i>
                                 <a href="mailto:ttth@tlu.edu.vn">ttth@tlu.edu.vn</a>
                             </span>
-
-                            <span class="login">
-                                You are not logged in. (<a href="../LMS/views/login/indexLogin.php">Login</a>)
-                            </span>
+                            <?php if (isset($_SESSION['isLogined']) && $_SESSION['isLogined']) : ?>
+                                <li class="login">
+                                    <a href="../LMS/views/login/processLogout.php">Logout</a>
+                                </li>
+                            <?php else : ?>
+                                <li class="login">
+                                    You are not logged in. (<a href="../LMS/views/login/indexLogin.php">Login</a>)
+                                </li>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </nav>
-            

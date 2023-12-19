@@ -210,11 +210,11 @@ session_start();
                             </span>
                             <?php if (isset($_SESSION['isLogined']) && $_SESSION['isLogined']) : ?>
                                 <li class="login">
-                                    <a href="../LMS/views/login/processLogout.php">Logout</a>
+                                    <a href="../login/processLogout.php">Logout</a>
                                 </li>
                             <?php else : ?>
                                 <li class="login">
-                                    You are not logged in. (<a href="../LMS/views/login/indexLogin.php">Login</a>)
+                                    You are not logged in. (<a href="../../LMS/app/views/login/indexLogin.php">Login</a>)
                                 </li>
                             <?php endif; ?>
                         </div>

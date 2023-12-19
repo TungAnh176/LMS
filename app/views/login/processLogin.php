@@ -3,7 +3,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    include_once('../../config.php');
+    include_once('../../config/config.php');
     try {
         $conn = getCon();
         $sql = "SELECT * FROM users WHERE (name = '$username' OR email = '$username')";
@@ -16,7 +16,8 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
             if(password_verify($password, $pass_saved)){
                 session_start();
                 $_SESSION['isLogined'] = true;
-                header("Location:../../index.php");
+                $_SESSION['id'] = $row['id'];
+                header("Location:../course/index.php");
             }
             else{
                 $error = "Password invalid";

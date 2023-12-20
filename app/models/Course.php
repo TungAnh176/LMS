@@ -1,25 +1,29 @@
-<?php
-// session_start();
-if (isset($_SESSION['isLogined']) && $_SESSION['isLogined']) {
-    //Lấy id từ session
-    global $id;
-    $id = $_SESSION['id'];
-    class Course
-    {
-        public static function getALL()
-        {
-            $conn = getCon();
-            $id = $_SESSION['id'];
-            $sql = "SELECT c.id, c.title, c.description
-                FROM courses c
-                JOIN course_user cu ON c.id = cu.course_id
-                WHERE cu.user_id = '$id'";
-            $stmt = $conn->prepare($sql);
-            $stmt->execute();
-            return $stmt->fetchAll();
+<?php 
+    class Course{
+        private $id;
+        private $title;
+        private $description;
+
+        public function __construct($id, $title, $description) {
+            $this->id = $id;
+            $this->title = $title;
+            $this->description = $description;
+        }
+        
+        public function getTitle(){
+            return $this->title;
+        }
+
+        public function setTitle(){
+            $this->title = $title;
+        }
+        public function getDescription(){
+            return $this->description;
+        }
+
+        public function setDescription(){
+            $this->description = $description;
         }
     }
-} else {
-    // Người dùng chưa đăng nhập, có thể chuyển hướng hoặc xử lý theo cách khác tùy thuộc vào yêu cầu của bạn.
-    echo "User not logged in.";
-}
+
+?>

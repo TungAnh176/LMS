@@ -183,10 +183,13 @@
 
                 <ul class="list-unstyled components">
                     <li>
-                        <a href="#">Home</a>
+                        <a href="index.php">Home</a>
                     </li>
                     <li>
-                        <a href="#">Source</a>
+                        <a href="index.php?c=course">Source</a>
+                    </li>
+                    <li>
+                        <a href="index.php?c=lesson">Lesson</a>
                     </li>
                 </ul>
             </nav>

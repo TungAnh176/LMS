@@ -1,6 +1,3 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -210,11 +207,11 @@ session_start();
                             </span>
                             <?php if (isset($_SESSION['isLogined']) && $_SESSION['isLogined']) : ?>
                                 <li class="login">
-                                    <a href="../login/processLogout.php">Logout</a>
+                                    <a href="index.php?c=user&a=logout">Logout</a>
                                 </li>
                             <?php else : ?>
                                 <li class="login">
-                                    You are not logged in. (<a href="../../LMS/app/views/login/indexLogin.php">Login</a>)
+                                    You are not logged in. (<a href="index.php?c=user&a=showLogin">Login</a>)
                                 </li>
                             <?php endif; ?>
                         </div>

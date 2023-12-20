@@ -1,5 +1,5 @@
 <?php
-include("../../layout/header.php");
+include(APP_Root. "/app/layout/header.php");
 ?>
 <div id="page" class="container-fluid mt-0">
     <div id="page-content" class="row">
@@ -21,7 +21,7 @@ include("../../layout/header.php");
                                                         echo "<p style='color:red'>{$_GET['error']}</p>";
                                                     }
                                                 ?>
-                                                <form class="mt-3" action="processLogin.php" method="post" id="login">
+                                                <form class="mt-3" action="index.php?c=user&a=login" method="post" id="login">
                                                     <div class="form-group">
                                                         <label for="username" class="sr-only">
                                                             Username
@@ -48,5 +48,5 @@ include("../../layout/header.php");
 </div>
 </div>
 <?php
-include("../../layout/footer.php");
+include(APP_Root. "/app/layout/footer.php");
 ?>
